@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="XDファイルコーディング(クリスタ初級)">
+    <title>クリスタ初級</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<header>
+<div class="wpheader">
+<div class="navbar">
+    <a href="#top" class="logo_link">
+        <img src="./images/site-title.png" alt="Logo" class="logo" />
+    </a>
+<a class="menu">
+    <span class="menu__line menu__line--top"></span>
+    <span class="menu__line menu__line--center"></span>
+    <span class="menu__line menu__line--bottom"></span>
+</a>
+<nav class="gnav">
+    <div class="gnav__wrap">
+    <ul class="gnav__menu">
+        <li><a href="#about" class="gnav__menu__item">About</a></li>
+        <li><a href="#service" class="gnav__menu__item">Services</a></li>
+        <li><a href="#contact" class="gnav__menu__item">Contact</a></li>
+    </ul>
+    </div><!--gnav-wrap-->
+</nav>
+</div>
+</div>
+</header>
+
+<div class="top" id="top">
+    <div class="container">
+    <h2 class="top_title">Cresta Design.</h2>
+</div>
+</div>
+
+<div class="container">
+<div class="about" id="about">
+    <h2 class="about_title">About</h2>
+    <p class="about_hendline">ミニマルで<br>洗練されたデザインを。</p>
+    <p class="about_text">近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、
+        課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。</p>
+</div>
+
+<div class="service" id="service">
+    <h2 class="service_title">Service</h2>
+    <div class="service_wrapper1">
+        <div class="service_item_left1">
+            <img src="./images/service-image1.png" alt="" class="service_image">
+        </div>
+        <div class="service_item_right1">
+            <p class="service_headline">リリース時のサポートで<br>サービスのブランディングを</p>
+            <p class="service_text">弊社では、リリース時もサポートさせて頂きます。
+                プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
+        </div>
+
+    </div>
+    <div class="service_wrapper2">
+        <div class="service_item_left2">
+            <p class="service_headline">リリース後のサポートで<br>効果を最大化させる</p>
+            <p class="service_text">弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。
+                そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。</p>
+        </div>
+        <div class="service_item_right2">
+            <img src="./images/service-image2.png" alt="" class="service_image">
+        </div>
+    </div>
+</div>
+
+<div class="news">
+    <h2 class="news_title">News</h2>
+    <div class="news_wrapper">
+        <div class="news_item1">
+            <img src="./images/card-image1.png" class="news_img" alt="">
+            <p class="news_text">新規サイトを公開しました。
+                今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+        </div>
+        <div class="news_item2">
+            <img src="./images/card-image2.png" class="news_img" alt="">
+            <p class="news_text">新規サイトを公開しました。
+                今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+        </div>
+        <div class="news_item3">
+            <img src="./images/card-image3.png" class="news_img" alt="">
+            <p class="news_text">新規サイトを公開しました。
+                今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+        </div>
+    </div>
+</div>
+
+    <div class="contact" id="contact">
+        <h3 class="contact_title">お問い合わせ</h3>
+        <form action="webform.php" method="POST" class="form">
+            <div class="form_group">
+                <label for="name" class="form_label">担当者名</label>
+                <input  type="text" class="form_control"  id="name" name="name" tabindex="1" required>
+            </div>
+            <div class="form_group">
+                <label for="tell" class="form_label">電話番号</label>
+                <input type="tell" class="form_control" id="tell" name="tell" tabindex="2" required>
+            </div>
+            <div class="form_group">
+                <label for="email" class="form_label">メールアドレス</label>
+                <input type="email" class="form_control" id="email" name="email" tabindex="3" required>
+            </div>
+            <div class="form_group">
+                <label for="message" class="form_label">お問い合わせ内容</label>
+                <textarea id="message" name="message" tabindex="4"></textarea>
+            </div>
+                <button type="submit" class="contact_btn">送信</button>
+        </form>
+    </div>
+</div>
+<footer>
+<div class="wpfooter">
+    <p class="footer_text">©︎crest.design all rights reserved</p>
+</div>
+</footer>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+
+@media (max-width: 540px) {
+:root {
+  --designWidth: 375;  
+}
+body {
+    width: 100%;
+    min-width: 32rem;
+}
+.container{
+    max-width: calc(37.5rem / var(--designWidth) * 100vw);
+}
+/* navbar */
+.wpheader {
+    max-width: 48rem;
+    margin-right: 0;
+    margin-left: 0;
+}
+.menu{
+    display: block;
+    height: 2rem;
+    position: absolute;
+    right: 0;
+    width: 2.5rem;
+    z-index: 99;
+    margin-right: 5%;
+}
+.menu__line{
+    background: #fff;
+    display: block;
+    height: .2rem;
+    position: absolute;
+    transition:transform .3s;
+    width: 100%;
+}
+.menu__line--center{
+    top: .9rem;
+}
+.menu__line--bottom{
+    bottom: 0;
+}
+.menu__line--top.active{
+    top: .8rem;
+    transform: rotate(45deg);
+}
+.menu__line--center.active{
+    transform:scaleX(0);
+}
+.menu__line--bottom.active{
+    bottom: 1rem;
+    transform: rotate(135deg);
+}
+/*gnav*/
+.gnav{
+    background: rgba(0,0,0,0.8);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+        z-index: 98;
+}
+.gnav__wrap{
+    align-items:center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.gnav__menu{
+    flex-direction: column; 
+    align-items:center;
+
+}
+
+.gnav__menu__item{
+    margin: 4rem 0;
+}
+.gnav__menu__item a{
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 4rem;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.gnav__menu li {
+    margin-bottom: 5rem;
+
+}
+.gnav__menu__item a:hover{
+    color: #666;
+}
+
+/* top */
+.top {
+    width: 100%;
+    max-width: 54rem;
+    min-height: 67rem;
+    background-position: bottom right;
+}
+
+.top .container{
+    margin: 0 auto;
+
+}
+
+.top_title {
+    font-size: 3rem;
+    width: 30rem;
+    height: 10rem;
+    padding: 3rem 3rem;
+}
+
+
+.wpheader {
+    padding: 0 1.5rem;
+}
+
+
+/* about */
+.about, 
+.service,
+.news,
+.contact{
+    margin-left: 0;
+    margin-right: 0;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.about_hendline {
+    font-size: 2rem;
+    margin-top: 6.3rem;
+    line-height: 4rem;
+}
+
+.about_text {
+    margin-top: 2.2rem;
+}
+
+/* service */
+.service_title {
+    margin-top: 15rem;
+    letter-spacing: 0.3rem;
+}
+
+.service_wrapper1,
+.service_wrapper2{
+    height: 40rem;
+}
+
+
+.service_wrapper1,
+.service_wrapper2,
+.news_wrapper{
+   flex-direction: column; 
+   margin-top: 5.3rem;
+}
+
+.service_wrapper2{
+    margin-top: 2.5rem;
+}
+
+.service_wrapper1 img,
+.service_wrapper2 img {
+    width: 100%;
+    height: 15rem;
+    margin-top: 3.3rem;
+}
+
+.service_item_left1,
+.service_item_left2,
+.service_item_right1,
+.service_item_right2{
+   width: 100%;
+}
+
+
+
+.service_item_left1,
+.service_item_left2 {
+  margin-right: 0;
+}
+
+.service_headline {
+  font-size: 2rem;
+  line-height: 4rem;
+  letter-spacing: 0.23rem;
+}
+
+.service_text {
+  margin-top: 2.2rem;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  letter-spacing: 0.05rem;
+}
+
+.service_item_right1{
+    order: 1;
+}
+
+.service_item_left1,
+.service_item_right2 {
+    order: 2;
+    margin-right: 0;
+}
+
+/* news */
+.news_title {
+    margin-top: 17rem;
+}
+
+.news_wrapper {
+    padding: 0 1.2rem;
+    margin-top: 7.3rem;
+}
+
+.news_item1,
+.news_item2,
+.news_item3 {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.news_item2 {
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+.news_text {
+    height: 12.3rem;
+}
+
+/* contact */
+.contact_title{
+    margin-top: 9.8rem;
+}
+
+form {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.contact_btn {
+    height: 6rem;
+    width: 23.3rem;
+}
+/* footer */
+}

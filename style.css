@@ -1,0 +1,336 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+    font-family: "Noto Sans CJK JP","ヒラギノ角ゴ ProN W3",serif;
+
+
+}
+
+:root {
+  --designWidth: 1440;  
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+  border-bottom: .2rem solid white;
+    width: 100%;
+  position: fixed;
+}
+
+.wpheader {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+body {
+  margin: 0;
+   -webkit-text-size-adjust: 100%;
+}
+
+/* navbar */
+.navbar {
+  color: white;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  height: 7.4rem;
+}
+
+.menu {
+  display: none;
+}
+
+.logo_link {
+  height: 3.5rem;
+  background: transparent;
+  margin-right: auto; 
+  color: white;
+}
+
+.gnav__menu {
+  display: flex;
+  align-items: flex-end;
+} 
+
+.gnav__menu__item {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-left: 5.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* top */
+.top {
+  height: 90vh;
+  min-height: 81.5rem;
+  background-image: url("./images/fv-bgi.png");
+  background-repeat:  no-repeat; 
+  background-size: cover;
+  background-position: center right;
+  padding-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.top_title {
+  font-size: 4.8rem;
+  font-family: "Medium";
+  
+  width: calc(44.9rem / var(--designWidth) * 100vw);
+  height: 13.6rem;
+  padding: 3.5rem 4.2rem 3.4rem;
+  border: .2rem solid #fff;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* about */
+.about, 
+.service,
+.news,
+.contact{
+  padding: 0 8.5rem;
+  margin: 0 auto;
+}
+
+.about_title,
+.service_title,
+.news_title{
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: "Roboto";
+}
+
+.about{
+  margin-top: 10rem;
+}
+
+.about_hendline {
+  font-family: "Noto Sans CJK JP";
+  font-weight: bold;
+  font-size: 2.4rem;
+  letter-spacing: 0.05rem;
+  line-height: 4.8rem;
+  text-align: left;
+  color: #141414;
+  margin-top: 7rem;
+  /* width: 24rem;
+  height: 8rem; */
+}
+
+.about_text {
+  font-size: 1.4rem;
+  font-family: "Noto Sans CJK JP";
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+  text-align: left;
+  color: #141414;
+  margin-top: 2.8rem;
+}
+
+/* service */
+.service_title{
+  margin-top: 16.5rem;
+}
+
+.service_wrapper1,
+.service_wrapper2 {
+  display: flex;
+  height: 24rem;
+}
+
+.service_wrapper1 {
+  margin-top: 7rem;
+}
+
+.service_wrapper2 {
+  margin-top: 5rem;
+}
+
+.service_item_left1,
+.service_item_left2,
+.service_item_right1,
+.service_item_right2{
+   width: 47%;
+
+}
+
+.service_item_left1,
+.service_item_left2{
+  margin-right: 7rem;
+}
+
+.service_image{
+ width: 100%;
+  height: 100%;
+}
+
+.service_headline,
+.service_text {
+  font-family: "Noto Sans CJK JP";
+  font-weight: bold;
+  text-align: left;
+  color: #141414;
+  margin: 1.5rem 0 2rem;
+}
+
+.service_headline {
+  font-size: 2rem;
+  line-height: 4.8rem;
+    }
+
+.service_text {
+  margin-top: 2.6rem;
+  font-size: 1.4rem;
+  line-height: 3rem;
+     width: calc(48rem / var(--designWidth) * 100vw);
+  letter-spacing: -.2rem;
+
+}
+
+/* news */
+.news_title {
+  margin-top: 15rem;
+} 
+
+.news_wrapper {
+  display: flex;
+  margin-top: 7.5rem;
+}
+
+.news_item2 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.news_item1,
+.news_item2,
+.news_item3 {
+  width: 33%;
+  height: 100%;
+  background: #fff;
+  box-shadow:0 0 .6rem rgba(27, 19, 16, 0.4);
+}
+
+.news_item1 img,
+.news_item2 img,
+.news_item3 img {
+  width: 100%;
+  height: 20rem;
+}
+
+.news_text {
+  padding: 2rem 3.2rem 2.5rem 3.4rem;
+  font-family: "ヒラギノ角ゴ ProN W3";
+  font-weight: normal;
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+  line-height: 2.5rem;
+  color: #141414;
+}
+
+/* contact */
+.contact{
+    width: calc(60rem / var(--designWidth) * 100vw);
+}
+
+.contact_title {
+  font-family: "Noto Sans CJK JP";
+  font-size: 2.4rem;
+  margin-top: 15.2rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  padding: 0 16.5rem;
+}
+
+.form_group {
+  margin-bottom: 2.2rem;
+}
+
+.form_label {
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 1.6rem;  
+  display:block;
+  margin-top: 2.2rem;
+}
+
+.form_control {
+  width: 100%;
+  height: 3rem;
+  background: #fff;
+  border: .1rem solid #141414;
+}
+
+textarea {
+  width: 100%;
+  height: 17.1rem;
+  background: #fff;
+  border: .1rem solid #141414;
+
+}
+
+.contact_btn {
+  width: 24.5rem;
+  height: 5.9rem;
+  background: transparent;
+  font-family: "Avenir";
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+  color: #fff;
+  background-color: #1B1310;
+  box-shadow: 0 0 .6rem 0 rgba(27, 19, 16, 0.6);
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5.1rem; 
+}
+
+/* footer */
+footer{
+  height: 7.9rem;
+  background-color: #1b1310;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.wpfooter {
+  max-width: 120rem;
+  margin: auto;
+}
+
+.footer_text {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 1.4rem;
+  letter-spacing: 0.01rem;
+  line-height: 3rem;
+  color: #fff;
+}
